@@ -1,0 +1,31 @@
+print("\nYEMEK MENÜSÜ SEÇİM PROGRAMINA HOŞ GELDİNİZ..."
+      "\n\nLütfen önce yemeğinizi seçiniz."
+      "\n1. Hamburger"
+      "\n2. Salata"
+      "\n3. Makarna")
+
+try:
+
+    a=int(input("Seçilen yemeğin numarası:"))
+
+    print("\n\nLütfen içeceğinizi seçiniz."
+              "\n1. Ayran"
+              "\n2. Limonata"
+              "\n3. Su")
+    
+    b=input("Seçilen içeceğin numarası:")
+
+    print("Seçtiğiniz yemek numarası",a,"ve seçtiğiniz içecek numarası",b,".")
+
+    b = input("Onaylıyor musunuz?(evet/hayır)")
+
+    if b=="evet":
+        print("Seçiminiz onaylandı, afiyet olsun.")
+
+    else:
+        print("Lütfen tekrar seçiniz.")
+        c = int(input("Seçilen yemeğin numarası:"))
+        d = int(input("Seçilen içeceğin numarası:"))
+        print("Seçtiğiniz yemek numarası", c, "ve seçtiğiniz içecek numarası", d, ". Afiyet olsun")
+except:
+    print("Hatalı Seçim Yapıldı...")
