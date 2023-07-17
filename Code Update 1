@@ -1,4 +1,3 @@
-#Yapılan değişiklikler ile menü seçiminin txt çıktısı masaüstüne kaydediliyor.
 print("\nYEMEK MENÜSÜ SEÇİM PROGRAMINA HOŞ GELDİNİZ..."
       "\n\nLütfen önce yemeğinizi seçiniz."
       "\n1. Hamburger"
@@ -7,14 +6,14 @@ print("\nYEMEK MENÜSÜ SEÇİM PROGRAMINA HOŞ GELDİNİZ..."
 
 try:
 
-    a = input("Seçilen yemeğin numarası:")
+    a = int(input("Seçilen yemeğin numarası:"))
 
     print("\n\nLütfen içeceğinizi seçiniz."
           "\n1. Ayran"
           "\n2. Limonata"
           "\n3. Su")
 
-    b = input("Seçilen içeceğin numarası:")
+    b = int(input("Seçilen içeceğin numarası:"))
 
     print("Seçtiğiniz yemek numarası", a, "ve seçtiğiniz içecek numarası", b, ".")
 
@@ -38,8 +37,8 @@ try:
               "\n\n1. Ayran"
               "\n2. Limonata"
               "\n3. Su")
-        b1 = input("\nSeçilen yemeğin numarası:")
-        b2 = input("Seçilen içeceğin numarası:")
+        b1 = int(input("\nSeçilen yemeğin numarası:"))
+        b2 = int(input("Seçilen içeceğin numarası:"))
         dosya = open(r"C:\Users\Melih\Desktop\Menü_Fişi.txt", mode="w")
         dosya.write("///////////////////////////////////////////////////////////////////////////////\n")
         dosya.write("\nYiyecekler 1. Hamburger 2. Salata 3. Makarna \nİçecekler 1. Ayran 2. Limonata 3. Su\n\n")
@@ -48,7 +47,7 @@ try:
         dosya.write(" ve ")
         dosya.write(b2)
         dosya.write(" nolu içecek ")
-        dosya.write("seçimi yapıldı. \n\nMenünüzü teslim alırken fişinizi veriniz. Yine bekleriz... \n16.07.2023 10:00")
+        dosya.write("seçimi yapıldı. \n\nMenünüzü teslim alırken fişinizi veriniz. Yine bekleriz... \n16.07.2023 10:00\n")
         dosya.write("\n///////////////////////////////////////////////////////////////////////////////")
         dosya.close()
         print("Yine bekleriz...")
